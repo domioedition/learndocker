@@ -9,7 +9,7 @@ services:
       - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
       - "./000-default.conf:/etc/apache2/sites-available/000-default.conf"
     ports:
-      - 8080:80
+      - 9000:80
     working_dir: ${APP_PATH_CONTAINER}
 
   db:
